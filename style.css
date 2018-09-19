@@ -341,6 +341,9 @@ figcaption {
 #aboutme_mobile{
   display:none;
 }
+#SKILLS {
+ display:block; 
+}
 @media screen and (max-height: 875px) {
   #aboutme_mobile{display:block;}
   #aboutme{display:none;}
