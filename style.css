@@ -339,10 +339,10 @@ figcaption {
   padding-top: 40px;
 }
 #aboutme_mobile{
-  display:none;
+  display:none !important;
 }
 #SKILLS {
- display:block; 
+ display:block !important; 
 }
 @media screen and (max-height: 875px) {
   #aboutme_mobile{display:block;}
