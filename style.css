@@ -344,6 +344,7 @@ figcaption {
 #SKILLS {
  display:block !important; 
 }
+/*
 @media screen and (max-width: 575px) {
   #aboutme_mobile{display:block;}
   #aboutme{display:none;}
@@ -353,4 +354,4 @@ figcaption {
   .myportrait{display:none;}
   #code_physsim{display:none;}
   #code_mazegame{display: none;}
-}
+}*/
