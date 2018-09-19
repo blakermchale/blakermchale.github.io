@@ -296,7 +296,7 @@ class Sprite
       }
       possibleX = xpos;
       possibleY = ypos;
-      
+      /*
       if (key == Lights && !light)
       {
         light = true;
@@ -305,6 +305,7 @@ class Sprite
       {
         light = false;
       }
+      */
       if(key == Left){
         possibleX = xpos - 1;
       }
