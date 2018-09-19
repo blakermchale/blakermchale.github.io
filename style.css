@@ -344,6 +344,9 @@ figcaption {
 #SKILLS {
  display:block !important; 
 }
+@media screen and (max-width: 575px) {
+  #about .container-fluid{height:100%;}
+}
 /*
 @media screen and (max-width: 575px) {
   #aboutme_mobile{display:block;}
