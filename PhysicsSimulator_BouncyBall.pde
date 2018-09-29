@@ -9,7 +9,7 @@ float xpos, ypos, g, v1_y, v1_x, angle, radius, ground;
   radius = 0;
   ground = 300.;
 }
-int total_Balls = 14;
+int total_Balls = 24;
 float const_elasticity = 0.05;
 float const_frictionAir = -0.9;
 float[] vertex = new float [8];
