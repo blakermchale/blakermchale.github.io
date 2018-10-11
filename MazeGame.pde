@@ -269,7 +269,33 @@ int CheckBox(int x, int y, int xpos, int ypos)
   return tempWalls[y][x];
 }
 
-  
+void generateMaze()
+{
+    int MazeWalls[rows][cols];
+    for (int i = 0; i < rows; i++)
+    {
+        MazeWalls[i][0] = 1;
+        MazeWalls[i][cols-1] = 1;
+    }
+    for (int i = 0; i < cols; i++)
+    {
+        MazeWalls[0][i] = 1;
+        MazeWalls[rows - 1][i] = 1;
+    }
+    int startSide = random(0,1);
+    int startLoc;
+    if (startSide == 0)
+    {
+        startLoc = random(1,rows-2);
+        MazeWalls[startLoc][0] = 0;
+    }
+    else if (startSide == 0)
+    {
+        startLoc = random(1,cols-2);
+        MazeWalls[0][startLoc] = 0;
+    }
+
+}
 
 class Sprite
 {
