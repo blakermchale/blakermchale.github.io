@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="738feec7-4b15-47ff-98bf-4d5c188e967c" name="Default Changelist" comment="Updated resume" />
+    <list default="true" id="738feec7-4b15-47ff-98bf-4d5c188e967c" name="Default Changelist" comment="Updated resume">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +14,12 @@
     <session id="271427472">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,7 +90,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-442">
               <caret line="130" column="67" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="67" />
             </state>
           </provider>
@@ -214,7 +216,8 @@
       <workItem from="1539018657912" duration="502000" />
       <workItem from="1539279906164" duration="967000" />
       <workItem from="1540140383595" duration="152000" />
-      <workItem from="1540174533592" duration="281000" />
+      <workItem from="1540174533592" duration="991000" />
+      <workItem from="1540182682896" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1538246007076</created>
@@ -241,12 +244,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4995000" />
+    <option name="totallyTimeSpent" value="6395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27238807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,7 +323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-442">
           <caret line="130" column="67" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="67" />
         </state>
       </provider>
