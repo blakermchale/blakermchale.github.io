@@ -51,9 +51,7 @@ function hover_skillsIcon(element){
             skills_titleText = "VBA";
             skills_descText = "During my summer going into sophomore year I learned VBA for an internship. My internship was a Department of the Navy Pathways internship (DON Pathways) in Groton, CT. " +
                 "I used VBA as part of my job to develop more efficient excel files and access databases. The project I worked on the most was an Individual Development Plan Database in Access. " +
-                "This required extensive use of both SQL and VBA to make an efficient interface for employees to input training data. It had both an offline mode and online mode to decrease loading times. The offline " +
-                "mode was created because the network was very slow and Access does not work well on the network. I created local tables and secured them with VBA." +
-                " Currently, the IDP Database is still being used for employee management.";
+                "This required extensive use of both SQL and VBA to make an efficient interface for employees to input training data.";
             meter_width = 55;
             break;
         case 'icon_sql':
