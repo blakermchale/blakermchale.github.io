@@ -127,6 +127,9 @@ function hover(element){
         case "MazeGame":
             file = "img/Portfolio/ex_MazeGame.PNG";
             break;
+        case "PlanetPolluter":
+            file = "img/Portfolio/ex_PlanetPolluter.PNG";
+            break;
         default:
             file= "img/snowymountain2.jpg";
     }

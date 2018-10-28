@@ -65,11 +65,11 @@ figcaption {
 
 /* Nav */
 .navbar_logo {
-  justify-content: right !important;*/
+  justify-content: right !important;
   position: absolute;
   right: 0px;
   padding: 10px;
-  height: 20%
+  height: 20%;
   float: right;
 }
 .logobar {
@@ -344,10 +344,11 @@ figcaption {
 #SKILLS {
  display:block !important; 
 }
+
 @media screen and (max-width: 575px) {
   #about .container-fluid{height:100%;}
 }
-/*
+
 @media screen and (max-width: 575px) {
   #aboutme_mobile{display:block;}
   #aboutme{display:none;}
@@ -357,4 +358,4 @@ figcaption {
   .myportrait{display:none;}
   #code_physsim{display:none;}
   #code_mazegame{display: none;}
-}*/
+}
