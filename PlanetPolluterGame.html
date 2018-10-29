@@ -42,7 +42,7 @@
         var gameInstance = UnityLoader.instantiate("gameContainer", "PlanetPolluterBuild/PolluterWeb.json", {onProgress: UnityProgress});
     </script>
 </head>
-<body>
+<body  id="PlanetPolluterPage">
 <div id="navbar">
     <a href="index.html#intro">Home</a>
     <a href="index.html#about">About</a>
@@ -59,12 +59,18 @@
         </div>
     </div>
 </div>
-<div class="webgl-content">
-    <div id="gameContainer" style="width: 960px; height: 600px"></div>
-    <div class="footer">
-        <!--<div class="webgl-logo"></div>-->
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">Planet Polluter</div>
+<bs3
+<div class="container-fluid">
+    <div class="webgl-content">
+        <div class="row jumbotron">
+            <h1>Planet Polluter</h1>
+        </div>
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <!--<div class="webgl-logo"></div>-->
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">Planet Polluter</div>
+        </div>
     </div>
 </div>
 </body>
