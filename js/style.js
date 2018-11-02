@@ -128,6 +128,9 @@ function hover(element){
         case "PlanetPolluter":
             file = "img/Portfolio/ex_PlanetPolluter.PNG";
             break;
+        case "AutonomousDrone":
+            file = "img/AutonomousDroneImg/drone_ESCMotor.jpg";
+            break;
         default:
             file= "img/snowymountain2.jpg";
     }
