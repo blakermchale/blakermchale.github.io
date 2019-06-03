@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Website for Personal Portfolio
+	Authors:
+	Blake McHale (mchale.blake@gmail.com)
+-->
+<html>
+	<head>
+		<title>Maze Game - Blake McHale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script type="text/javascript" src="../../processingjs/processing.js"></script>
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+
+<!--		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--		&lt;!&ndash; Global site tag (gtag.js) - Google Analytics &ndash;&gt;-->
+<!--		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126386682-1"></script>-->
+<!--		<script>-->
+<!--			window.dataLayer = window.dataLayer || [];-->
+<!--			function gtag(){dataLayer.push(arguments);}-->
+<!--			gtag('js', new Date());-->
+
+<!--			gtag('config', 'UA-126386682-1');-->
+<!--		</script>-->
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header class="topnav" id="header">
+				<a href="../../index.html" class="title">Blake McHale</a>
+				<nav>
+					<ul>
+						<li class="dropdown">
+							<a href="../../index.html" class="dropbtn">Home
+								<i class="fa fa-caret-down"></i>
+							</a>
+							<div class="dropdown-content">
+								<a href="../../index.html#about">About</a>
+								<a href="../../index.html#skills">Skills</a>
+							</div>
+						</li>
+						<li>
+							<a href="../../index.html#experience">Experience</a>
+						</li>
+						<li class="dropdown">
+								<a href="../../index.html#projects" class="dropbtn active">Projects
+									<i class="fa fa-caret-down"></i>
+								</a>
+								<div class="dropdown-content">
+<!--									<a href="../alphapilot/alphapilot.html">AlphaPilot</a>-->
+									<a class="active" href="mazegame.html">Maze Game</a>
+									<a href="../planetpolluter/planetpolluter.html">Planet Polluter</a>
+									<a href="../physicssim_bouncyball/physicssim.html">Physics Sim</a>
+								</div>
+						</li>
+						<li><a href="../../elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Maze Game</h1>
+<!--							<div class="col-sm-6" id="code_physsim">-->
+<!--								<canvas data-processing-sources="PhysicsSimulator_BouncyBall.pde"></canvas>-->
+<!--							</div>-->
+<!--							<div><canvas data-processing-sources="PhysicsSimulator_BouncyBall.pde"></canvas></div>-->
+<!--							<span class="image fit"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span>-->
+<!--							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>-->
+<!--							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>-->
+<!--							<p><span class="image left"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span> Holaegjjkk jiupaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>-->
+<!--							<p><span class="image right"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span> Holaegjjkk jiupaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>-->
+							<div class="row">
+								<div class="col-12">
+									<span id="code_mazegame"><canvas data-processing-sources="MazeGame.pde"></canvas></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<p>
+										During my freshman year Cornerstone of Engineering II class I developed and designed a maze game with a controller.
+										I worked on this project in conjuction with Scott Young and Will Decramer. I acted as a game design and controller lead, while
+										my other partners worked on CAD design and an interface for another part of the project. This game was built as one of many
+										puzzles in an escape room that was open to the public for one day. For this Escape Room I helped design the narrative and this
+										game. Our theme for the escape room was about being trapped in a military base where two AI are fighting for control. The room changed
+										depending on your input as the user and each puzzle offered two solutions. This maze was meant to be played with a controller, but it can also be played through the use of 'W','A','S', and 'D'.
+										The '1' key will reset your sprite back at the beginning.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Blake McHale. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>

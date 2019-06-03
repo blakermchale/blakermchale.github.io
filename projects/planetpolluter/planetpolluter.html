@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Website for Personal Portfolio
+	Authors:
+	Blake McHale (mchale.blake@gmail.com)
+-->
+<html>
+<head>
+    <title>Planet Polluter - Blake McHale</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script type="text/javascript" src="../../processingjs/processing.js"></script>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126386682-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126386682-1');
+    </script>
+    <link rel="stylesheet" href="PlanetPolluterTemplateData/style.css">
+    <script src="PlanetPolluterTemplateData/UnityProgress.js"></script>
+    <script src="PlanetPolluterBuild/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "PlanetPolluterBuild/PolluterWeb.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body class="is-preload">
+
+<!-- Header -->
+<header class="topnav" id="header">
+    <a href="../../index.html" class="title">Blake McHale</a>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="../../index.html" class="dropbtn">Home
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="../../index.html#about">About</a>
+                    <a href="../../index.html#skills">Skills</a>
+                </div>
+            </li>
+            <li>
+                <a href="../../index.html#experience">Experience</a>
+            </li>
+            <li class="dropdown">
+                <a href="../../index.html#projects" class="dropbtn active">Projects
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+<!--                    <a href="../alphapilot/alphapilot.html">AlphaPilot</a>-->
+                    <a href="../mazegame/mazegame.html">Maze Game</a>
+                    <a class="active" href="planetpolluter.html">Planet Polluter</a>
+                    <a href="../physicssim_bouncyball/physicssim.html">Physics Sim</a>
+                </div>
+            </li>
+            <li><a href="../../elements.html">Elements</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <h1 class="major">Physics Simulator</h1>
+            <!--							<div class="col-sm-6" id="code_physsim">-->
+            <!--								<canvas data-processing-sources="PhysicsSimulator_BouncyBall.pde"></canvas>-->
+            <!--							</div>-->
+            <!--							<div><canvas data-processing-sources="PhysicsSimulator_BouncyBall.pde"></canvas></div>-->
+            <!--							<span class="image fit"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span>-->
+            <!--							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>-->
+            <!--							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>-->
+            <!--							<p><span class="image left"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span> Holaegjjkk jiupaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>-->
+            <!--							<p><span class="image right"><img src="../images/colorado_mtns_wide.jpg" alt="" /></span> Holaegjjkk jiupaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>-->
+            <div class="row">
+                <div class="col-12">
+                    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+                    <div class="footer">
+                        <!--<div class="webgl-logo"></div>-->
+                        <div class="row fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+
+                    </div>                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>This project was created in Unity for the NASA Space Apps International Challenge.
+                        The goal of our project was to raise awareness about climate change and create a fun
+                        interactive way for people to see how their actions affect the world. The goal of our game
+                        "Planet Polluter" is to end the world by causing the CO2 to levels to exceed 500 ppm. In
+                        this prototype, the game has functions for creating factories, collecting money, and
+                        causing temperature change.
+                    </p>
+                    <p>
+                        At the local Boston hackathon our project won first place and was entered into the global
+                        competition. We plan to add more features such as public awareness, sea level, and heat maps
+                        to make this game a more complete and realistic simulation.
+                    </p>
+                    <ul>
+                        <h4 style="padding-top: 10px">Team Members</h4>
+                        <li><a href="http://brockfenbert.com">Brock Fenbert </a></li>
+                        <li><a href="http://christiankuss.com">Christian Kuss </a></li>
+                        <li><a href="http://joshafield.com">Josh Field </a></li>
+                        <li>Ryan Lung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper alt">
+    <div class="inner">
+        <ul class="menu">
+            <li>&copy; Blake McHale. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+</body>
+</html>

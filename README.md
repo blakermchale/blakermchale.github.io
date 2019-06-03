@@ -1,1 +1,0 @@
-# blakermchale.github.io
