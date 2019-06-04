@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfae9181-fefe-423d-943a-a8ab6af1629a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/mazegame/mazegame.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/mazegame/mazegame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/physicssim_bouncyball/physicssim.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/physicssim_bouncyball/physicssim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/planetpolluter/planetpolluter.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/planetpolluter/planetpolluter.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="104" column="100" lean-forward="true" selection-start-line="104" selection-start-column="100" selection-end-line="104" selection-end-column="100" />
+              <caret line="182" column="26" selection-start-line="182" selection-start-column="26" selection-end-line="182" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -50,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/mazegame/mazegame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+            <state relative-caret-position="1840">
+              <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -68,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/physicssim_bouncyball/physicssim.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="1794">
               <caret line="78" column="68" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
             </state>
           </provider>
@@ -77,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/planetpolluter/planetpolluter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="1909">
               <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -198,6 +193,7 @@
       <workItem from="1559537586391" duration="509000" />
       <workItem from="1559567503923" duration="469000" />
       <workItem from="1559605836775" duration="1330000" />
+      <workItem from="1559610684654" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="Changed README">
       <created>1559537776268</created>
@@ -217,7 +213,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2308000" />
+    <option name="totallyTimeSpent" value="2663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -259,13 +255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/mazegame/mazegame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="80" column="34" lean-forward="true" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1541">
@@ -273,10 +262,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/physicssim_bouncyball/physicssim.html">
+    <entry file="file://$PROJECT_DIR$/projects/mazegame/mazegame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="78" column="68" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
+        <state relative-caret-position="1840">
+          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -287,9 +276,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/physicssim_bouncyball/physicssim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="78" column="68" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/planetpolluter/planetpolluter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="1909">
           <caret line="83" column="52" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -300,7 +296,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
-          <caret line="104" column="100" lean-forward="true" selection-start-line="104" selection-start-column="100" selection-end-line="104" selection-end-column="100" />
+          <caret line="182" column="26" selection-start-line="182" selection-start-column="26" selection-end-line="182" selection-end-column="26" />
         </state>
       </provider>
     </entry>
