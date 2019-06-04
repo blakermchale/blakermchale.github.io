@@ -14,7 +14,12 @@
 }
 
 @media screen and (max-width: 736px) {
-    #code_physsim {
+    .none-display-medium {
+        display: none;
+    }
+}
+@media screen and (max-width: 1050px){
+    .none-display-1050 {
         display: none;
     }
 }
