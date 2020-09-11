@@ -64,11 +64,11 @@
     <!-- About Me -->
     <section id="about" class="wrapper style2 spotlights">
         <section>
-            <a href="#" class="image"><img src="images/portrait.jpg" alt="" data-position="center center"/></a>
+            <a href="#" class="image circle"><img src="images/portrait.jpg" alt="" data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>About Me</h2>
-                    <p>I am currently a third year computer engineering student pursuing a Bachelors and Masters at Northeastern University
+                    <p>I am currently a fourth year computer engineering student pursuing a Bachelors and Masters at Northeastern University
                         in Boston, Massachusetts.
                         My passion is to develop software and hardware that will improve the lives of others. Some of my
                         interests include soccer, basketball, tennis, rock climbing, and music.</p>
@@ -83,14 +83,26 @@
 
     <!-- Experience -->
     <section id="experience" class="wrapper style1 fade-up spotlights">
-                <div class="inner">
-<!--        <header class="main-section-header">-->
+        <div class="inner">
             <h2 class="major">Experience</h2>
-            <!--                <p></p>-->
-<!--        </header>-->
-                </div>
+        </div>
         <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
-            <a href="https://www.med.navy.mil/sites/nmrc/NSMRL/Pages/Home.aspx" class="image"><img src="images/nsmrl_logo.jpg" alt="" data-position="center center"/></a>
+            <a href="https://www.mitre.org/" class="image circle"><img src="images/mitre_logo.jpg" alt="" data-position="center center"/></a>
+            <div class="content">
+                <div class="inner">
+                    <h2>MITRE</h2>
+                    <h4>PNT Platform Software Intern | June 2020 - August 2020</h4>
+                    <p>
+                        Created a MITRE internal python package that simulated signal propagation. Focused on adding support of terrain maps to
+                        pathloss models. Utilized existing packages, such as GDAL and Cartopy, to read in DTED and SRTM files then show accurate 
+                        latitude/longitude plots. Also, implemented collision detection methods for determing if terrain is blocking signal
+                        between receiver and transmitter.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="https://www.med.navy.mil/sites/nmrc/NSMRL/Pages/Home.aspx" class="image circle"><img src="images/nsmrl_logo.jpg" alt="" data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>Naval Submarine Medical Research Laboratory</h2>
@@ -101,15 +113,11 @@
                         neural network. To perform quick analysis I used the hyperopt library and created a system to compare and store various
                         architectures.
                     </p>
-                    <!--TODO: Get rid of below-->
-                    <!--									<ul class="actions">-->
-                    <!--										<li><a href="generic.html" class="button">Learn more</a></li>-->
-                    <!--									</ul>-->
                 </div>
             </div>
         </section>
         <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
-            <a href="https://www.ssci.com/" class="image"><img src="images/ssci_logo.jpg" alt="" data-position="center center"/></a>
+            <a href="https://www.ssci.com/" class="image circle"><img src="images/ssci_logo.jpg" alt="" data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>Scientific Systems Company Inc.</h2>
@@ -131,15 +139,11 @@
 <!--                        the drone was flying and gathering data. The drone's Automatic Target Recogntion (ATR) algorithm was-->
 <!--                        validated by passing this data to it.-->
                     </p>
-                    <!--TODO: Get rid of below-->
-                    <!--									<ul class="actions">-->
-                    <!--										<li><a href="generic.html" class="button">Learn more</a></li>-->
-                    <!--									</ul>-->
                 </div>
             </div>
         </section>
         <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
-            <a href="https://www.navsea.navy.mil/Home/SUPSHIP/Groton/" class="image"><img src="images/supship_logo.png" alt="" data-position="center center"/></a>
+            <a href="https://www.navsea.navy.mil/Home/SUPSHIP/Groton/" class="image circle"><img src="images/supship_logo.png" alt="" data-position="center center"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>Supervisory of Shipbuilding, Groton CT</h2>
@@ -148,14 +152,9 @@
                         Worked as an intern developing software to support the engineering departments flow of information.
                          I designed, optimized, and secured a database containing PII using Microsoft Access, SQL, and Excel.
                     </p>
-                    <!--TODO: Get rid of below-->
-                    <!--									<ul class="actions">-->
-                    <!--										<li><a href="generic.html" class="button">Learn more</a></li>-->
-                    <!--									</ul>-->
                 </div>
             </div>
         </section>
-        <!--        </div>-->
     </section>
     <!-- Experience -->
     <section id="skills" class="wrapper style3 fade-up">
@@ -180,7 +179,7 @@
                 </section>
                 <section>
                     <span class="icon major icon-ros_logo_dots website-override-fontawesome"></span>
-                    <h3>ROS</h3>
+                    <h3>ROS/ROS2</h3>
                     <p></p>
                 </section>
                 <section>
@@ -198,64 +197,98 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="wrapper style2 fade-up">
+    <section id="projects" class="wrapper style2 fade-up spotlights">
         <div class="inner">
             <h2>
                 Projects
             </h2>
-            <div class="row features bm-list">
-
-<!--            <div class="col-9">-->
-                <div class="table-wrapper col-12 col-12-medium">
-                    <table class="alt">
-<!--                        <thead>-->
-<!--                        <tr>-->
-<!--                            <th>Project</th>-->
-<!--                            <th>Description</th>-->
-<!--                        </tr>-->
-<!--                        </thead>-->
-                        <tbody>
-                        <tr>
-                            <td>Rocket Locator</td>
-                            <td>NUAV project building an octocopter to autonomously identify and find locations of rockets using rf beacons</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://www.lockheedmartin.com/en-us/news/events/ai-innovation-challenge.html">AlphaPilot</a></td>
-                            <td>Autonomous Drone competition</td>
-                        </tr>
-                        <tr>
-                            <td><a href="https://devpost.com/software/retro-eye">Retro-Eye</a></td>
-                            <td>Eye tracker that lets all individuals play Tetris, with their eyes</td>
-                        </tr>
-                        <tr>
-                            <td><a href="projects/planetpolluter/planetpolluter.html">Planet Polluter</a></td>
-                            <td> 1st Place NASA Space App Hackathon 2018</td>
-                        </tr>
-                        <tr>
-                            <td><a href="projects/mazegame/mazegame.html">Escape Room Maze Game</a></td>
-                            <td>Maze developed for Cornerstone of Engineering 2</td>
-                        </tr>
-                        <tr>
-                            <td><a href="projects/physicssim_bouncyball/physicssim.html">Physics Simulator</a></td>
-                            <td>Simulator created for AP Computer Science Principles</td>
-                        </tr>
-                        <tr>
-<!--                            <td><a href="projects/physicssim_bouncyball/physicssim.html">Physics Simulator</a></td>-->
-<!--                            <td>Simulator created for AP Computer Science Principles</td>-->
-                        </tr>
-                        </tbody>
-                        <tfoot>
-<!--                        <tr>-->
-<!--                            <td colspan="1"></td>-->
-<!--                            <td>100.00</td>-->
-<!--                        </tr>-->
-                        </tfoot>
-                    </table>
+        </div>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a class="image project">
+                <img src="images/nuav/swarm_drone_in_rack.JPG" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2>NUAV Software</h2>
+                    <h4>Project Lead | June 2019 - Present</h4>
+                    <p>
+                        Project building a large octocopter for delivery and retrieval of smaller UAVs. Controls are done with ardupilot
+                        and a modified version of dronekit. ROS2 is used as the main infrastructure for communicating commands and retrieving
+                        data from sensors. Missions are performed with a behavior tree library developed by our club in C++.
+                    </p>
                 </div>
-<!--            <div class="col-3" id="main-projects-img">-->
-<!--                <a href="https://www.navsea.navy.mil/Home/SUPSHIP/Groton/" class="image"><img src="images/supship_logo.png" alt="" data-position="center center"/></a>-->
-<!--            </div>-->
             </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="https://www.lockheedmartin.com/en-us/news/events/ai-innovation-challenge.html" class="image project">
+                <img src="images/nuav/alphapilot_gate.jpg" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2><a href="https://www.lockheedmartin.com/en-us/news/events/ai-innovation-challenge.html">NUAV AlphaPilot</a></h2>
+                    <h4>Project Lead | Jan. 2019 - June 2019</h4>
+                    <p>
+                        Autonomous Drone competition.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="https://devpost.com/software/retro-eye" class="image project">
+                <img src="images/tetris.jpg" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2><a href="https://devpost.com/software/retro-eye">Retro-Eye</a></h2>
+                    <h4>Hack Harvard Submission</h4>
+                    <p>
+                        Eye tracker that lets all individuals play Tetris, with their eyes.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="projects/planetpolluter/planetpolluter.html" class="image project">
+                <img src="images/planetpolluter/ex_PlanetPolluter.PNG" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2><a href="projects/planetpolluter/planetpolluter.html">Planet Polluter</a></h2>
+                    <h4>1st Place NASA Space App Hackathon</h4>
+                    <p>
+                        Game developed in Unity to demonstrate the effect of pollution on the earth's climate.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="projects/mazegame/mazegame.html" class="image project">
+                <img src="images/mazegame/ex_MazeGame.PNG" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2><a href="projects/mazegame/mazegame.html">Escape Room Maze Game</a></h2>
+                    <h4>Cornerstone of Engineering 2 Project</h4>
+                    <p>
+                        Maze game developed with Java.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="projects/physicssim_bouncyball/physicssim.html" class="image project">
+                <img src="images/physsim/ex_PhysSim.PNG" alt="" data-position="center center"/>
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2><a href="projects/physicssim_bouncyball/physicssim.html">Physics Simulator</a></h2>
+                    <h4>AP Computer Science Principles Project</h4>
+                    <p>
+                        Basic ball physics simulator.
+                    </p>
+                </div>
+            </div>
+        </section>
         </div>
     </section>
 </div>

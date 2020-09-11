@@ -3008,8 +3008,16 @@ input, select, textarea {
 			display: block;
 			margin: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
 			border: solid 1px;
+		}
+
+		.spotlights > section > .circle {
+			border-radius: 100%;
+		}
+
+		.spotlights > section > .project {
+			/* max-width: 200px;
+			max-height: 200px; */
 		}
 
 			.spotlights > section > .image img {
@@ -3035,7 +3043,9 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
-				/*TODO: Edit made to add border radius attribute*/
+			}
+
+			.spotlights > section > .circle::before {
 				-webkit-border-radius: 100%;
 				-moz-border-radius: 100%;
 				border-radius: 100%;
