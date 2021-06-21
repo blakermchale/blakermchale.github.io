@@ -68,7 +68,7 @@
             <div class="content">
                 <div class="inner">
                     <h2>About Me</h2>
-                    <p>I am currently a fourth year computer engineering student pursuing a Bachelors and Masters at Northeastern University
+                    <p>I am currently a fifth year computer engineering student pursuing a Bachelors and Masters at Northeastern University
                         in Boston, Massachusetts.
                         My passion is to develop software and hardware that will improve the lives of others. Some of my
                         interests include soccer, basketball, tennis, rock climbing, and music.</p>
@@ -86,6 +86,21 @@
         <div class="inner">
             <h2 class="major">Experience</h2>
         </div>
+        <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
+            <a href="https://www.jpl.nasa.gov/" class="image circle"><img src="images/jpl_logo.jpg" alt="" data-position="center center"/></a>
+            <div class="content">
+                <div class="inner">
+                    <h2>NASA Jet Propulsion Laboratory</h2>
+                    <h4>Software Engineering Co-op 347K | Jan. 2021 - June 2021</h4>
+                    <p>
+                        Supported the development of Surface Simulation (Ssim), a simulator used by rover planners to validate rover sequence
+                        commands on the Mars rover. Improved terrain support for Ssim by adding better multi-threading of terrain files.
+                        Extended testing capabilities for both Ssim and its web interface. Improved web interface by exposing Ssim inputs and
+                        designing better external terrain file management. Developed a parser to extract information from flight software channels.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="" style="background-color: rgba(0, 0, 0, 0.0);">
             <a href="https://www.mitre.org/" class="image circle"><img src="images/mitre_logo.jpg" alt="" data-position="center center"/></a>
             <div class="content">
@@ -212,9 +227,12 @@
                     <h2>NUAV Software</h2>
                     <h4>Project Lead | June 2019 - Present</h4>
                     <p>
-                        Project building a large octocopter for delivery and retrieval of smaller UAVs. Controls are done with ardupilot
-                        and a modified version of dronekit. ROS2 is used as the main infrastructure for communicating commands and retrieving
-                        data from sensors. Missions are performed with a behavior tree library developed by our club in C++.
+                        Project building a large dodecacopter (UHL) for delivery and retrieval of smaller UAVs. Controls are done with a modified 
+                        version of PX4 using RTPS. RTPS is a communication framework that allows for ROS2 to directly interface with the PX4
+                        firmware. ROS2 is used as the main infrastructure for communicating commands and retrieving
+                        data from sensors. Missions are performed with a behavior tree library developed by our club in C++. The main mission 
+                        involves dropping UAVs from our UHL and then having them catch themselves mid-air using a custom `Drop` mode we added.
+                        The UAVs will then perform a search mission and reintegrate back into the UHL through precision landing on ArUco markers.
                     </p>
                 </div>
             </div>
