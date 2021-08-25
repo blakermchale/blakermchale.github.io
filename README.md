@@ -3,6 +3,7 @@
 ```bash
 npm install -g gatsby-cli
 # npm install --save gatsby-plugin-styled-components styled-components babel-plugin-styled-components
+npm i @makotot/ghostui
 ```
 ## Develop
 ```bash
