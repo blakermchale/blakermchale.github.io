@@ -9,12 +9,12 @@
 		<title>Maze Game - Blake McHale</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<script type="text/javascript" src="../../processingjs/processing.js"></script>
+
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<!-- <script type="text/javascript" src="../../processingjs/processing.js"></script> -->
 		<!-- Header -->
 		<iframe src="../topnav.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
@@ -25,9 +25,14 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<h1 class="major">Maze Game</h1>
+					<script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+
 					<div class="row">
 						<div class="col-12">
-							<span id="code_mazegame" class="none-display-medium"><canvas data-processing-sources="MazeGame.pde"></canvas></span>
+							<span id="code_mazegame" class="none-display-medium">
+								<!-- <canvas data-processing-sources="/projects/mazegame/code/MazeGame.pde"></canvas> -->
+								<script src="/projects/mazegame/code/MazeGame.js"></script>
+							</span>
 						</div>
 					</div>
 					<div class="row">
