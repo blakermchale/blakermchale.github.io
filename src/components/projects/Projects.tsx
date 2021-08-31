@@ -11,22 +11,8 @@ import UHL_02 from '../../images/nuav/UHL_02.png'
 
 import Project from './Project';
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   const PROJECTS = [
-    {
-        href: '',
-        image: UHL_02,
-        heading: 'Swarm Carrier Capstone',
-        subheading: 'Software Lead',
-        description: <>
-            Project building a large dodecacopter (UHL) for delivery and retrieval of smaller UAVs. Controls are done with a modified 
-            version of PX4 using RTPS. RTPS is a communication framework that allows for ROS2 to directly interface with the PX4
-            firmware. ROS2 is used as the main infrastructure for communicating commands and retrieving
-            data from sensors. Missions are performed with a behavior tree library developed by our club in C++. The main mission 
-            involves dropping UAVs from our UHL and then having them catch themselves mid-air using a custom `Drop` mode we added.
-            The UAVs will then perform a search mission and reintegrate back into the UHL through precision landing on ArUco markers.
-        </>,
-    },
     {
       href: '',
       image: frog_v2_fleet,
@@ -41,6 +27,7 @@ const Projects = () => {
         path planning.
       </>,
       gitlab: 'https://gitlab.com/aeronu/nuav',
+      date: "2021-09-02",
     },
     {
         href: '',
@@ -51,6 +38,7 @@ const Projects = () => {
             Reinforcement learning project with double DQN to train UAV navigation using a depth camera in AirSim
         </>,
         github: 'https://github.com/blakermchale/deep_flight',
+        date: "2020-12-15",
     },
     {
         href: 'https://www.lockheedmartin.com/en-us/news/events/ai-innovation-challenge.html',
@@ -60,6 +48,7 @@ const Projects = () => {
         description: <>
             Autonomous drone racing competition.
         </>,
+        date: "2019-05-10",
     },
     {
         href: 'https://devpost.com/software/retro-eye',
@@ -70,46 +59,24 @@ const Projects = () => {
             Eye tracker that lets all individuals play Tetris, with their eyes.
         </>,
         github: 'https://github.com/christianmkuss/retroeye',
-    },
-    {
-        href: '',
-        image: ex_PlanetPolluter,
-        heading: 'Planet Polluter',
-        subheading: '1st Place NASA Space App Hackathon',
-        description: <>
-            Game developed in Unity to demonstrate the effect of pollution on the earth's climate.
-        </>,
-        github: 'https://github.com/christianmkuss/SpaceAppsHackathon',
-    },
-    {
-        href: '',
-        image: ex_MazeGame,
-        heading: 'Escape Room Maze Game',
-        subheading: 'Cornerstone of Engineering 2 Project',
-        description: <>
-            Maze game developed with Java.
-        </>,
-    },
-    {
-        href: '',
-        image: ex_PhysSim,
-        heading: 'Physics Simulator',
-        subheading: 'AP Computer Science Principles Project',
-        description: <>
-            Basic ball physics simulator.
-        </>,
+        date: "2019-10-21",
     },
   ];
-
-  const [projects] = React.useState(PROJECTS);
+  projects = projects.concat(PROJECTS);
+  console.log(projects)
+  projects = projects.sort(function(a,b){
+    return new Date(b.date) - new Date(a.date);
+  });
+  const [_projects] = React.useState(projects);
 
   return (
     <section id="projects" className="wrapper style2 fade-up spotlights">
-       <div class="inner">
-            <h2 class="major">Projects</h2>
+       <div className="inner">
+            <h2 className="major">Projects</h2>
         </div>
-       {projects.map(project => <Project key={project.heading} {...project} />)}
+       {_projects.map(project => <Project key={project.heading} {...project} />)}
     </section>
+
   );
 }
 

@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import 'font-awesome.min.css';
 @import url("../fonts/icomoon/style.css");
+@import url("../../../node_modules/bootstrap/scss/bootstrap.scss");
 
 /*
 	Hyperspace by HTML5 UP
@@ -49,7 +50,9 @@
 	@import 'components/spotlights';
 	@import 'components/table';
 	@import 'components/wrapper';
+	// Added for Blake's website
 	@import 'components/devicon';
+	@import 'components/dropdown';
 
 // Layout.
 

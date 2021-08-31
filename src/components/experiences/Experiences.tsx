@@ -8,7 +8,7 @@ import supship_logo from '../../images/supship_logo.png'
 
 import Experience from './Experience';
 
-const Experiences = () => {
+let Experiences = () => {
   const EXPERIENCES = [
     {
       href: 'https://www.jpl.nasa.gov/',
@@ -68,7 +68,7 @@ const Experiences = () => {
     {
       href: 'https://www.navsea.navy.mil/Home/SUPSHIP/Groton/',
       image: supship_logo,
-      heading: 'Scientific Systems Company Inc.',
+      heading: 'Supervisory of Shipbuilding, Groton CT',
       subheading: 'Student Trainee (Office Automation) | June 2018 - August 2018',
       description: <>
         Worked as an intern developing software to support the engineering departments flow of information. 
@@ -81,8 +81,8 @@ const Experiences = () => {
 
   return (
     <section id="experience" className="wrapper style1 fade-up spotlights">
-       <div class="inner">
-            <h2 class="major">Experience</h2>
+       <div className="inner">
+            <h2 className="major">Experience</h2>
         </div>
        {experiences.map(experience => <Experience key={experience.heading} {...experience} />)}
     </section>

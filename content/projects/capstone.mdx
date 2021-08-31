@@ -1,0 +1,59 @@
+---
+date: "2021-12-14"
+title: "Swarm Carrier Capstone"
+short_title: "Capstone"
+toc: true
+archived: false
+has_page: true
+# Main Page
+gitlab: ''
+github: ''
+heading: "Swarm Carrier Capstone"
+image: "/images/nuav/UHL_02.png"
+subheading: "Software Lead"
+description: '
+Project building a large dodecacopter (UHL) for delivery and retrieval of smaller UAVs. Controls are done with a modified 
+version of PX4 using RTPS. RTPS is a communication framework that allows for ROS2 to directly interface with the PX4
+firmware. ROS2 is used as the main infrastructure for communicating commands and retrieving
+data from sensors. Missions are performed with a behavior tree library developed by our club in C++. The main mission 
+involves dropping UAVs from our UHL and then having them catch themselves mid-air using a custom `Drop` mode we added.
+The UAVs will then perform a search mission and reintegrate back into the UHL through precision landing on ArUco markers.
+'
+---
+**NOTE:** This is still a work in progress
+
+## Introduction  
+For my final engineering capstone my friends and I are building a system for deploying
+and reintegrating a swarm of UAVs. The system consists of a dodecacopter called the
+"carrier drone" and six custom built and designed quadcopters "called swarm drones".
+These six swarm drones are held inside a mechanism on the carrier drone and then
+carried to a mission location and dropped. The drone's will automatically catch
+themselves and perform the mission. Once done they return to the carrier drones
+landing location and autonomously precision land back into the vehicle.
+
+## The Team
+This project is being worked on by my friends and I seen below:  
+Noah Ossanna (Mechanical), John Buczek (Electrical), Michael Tang (Mechanical),
+Blake McHale (Software), Josh Field (Software), Erik Little (Mechanical)
+
+## Software
+There are three primary systems to software: flight control, swarm communication,
+and mission path planning.  
+Heavy focus has been placed on flight control as that is the most vital aspect of
+this system and required at completion of the project. Swarm communication and
+mission path planning are extra goals added on. 
+
+### Flight Control
+For controlling the drones PX4 and RTPS are used along with ROS2. A basic library
+called `companion_computing` is being developed for easily sending commands to the
+vehicle, such as positions and velocities. There are also fundamental actions:
+takeoff, land, arm, disarm, kill, precision land, and drop.  
+The last two are in heavy development and testing. They are custom implemented
+into `companion_computing` and the PX4 flight stack itself.
+
+## Hardware
+Outside of software a lot of work has been done by my friends who are mechanical
+and electrical. Slight additions were added by Josh and I, such as a lot of the
+testing and setup for sensors and the flight controller. I had a heavy hand in
+connecting the PX4 flight controller to our onboard computer and establishing
+appropriate parameters.

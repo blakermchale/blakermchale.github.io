@@ -1,7 +1,8 @@
+const remarkSlug = require(`remark-slug`);
 module.exports = {
   pathPrefix: `/gatsby-starter-hyperspace/`, // This path is subpath of your hosting https://domain/portfolio
   siteMetadata: {
-    title: 'Gatsby Starter Hyperspace',
+    title: 'Blake McHale',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,5 +20,26 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    'gatsby-plugin-sharp',
+    'gatsby-remark-images-anywhere',
+    'gatsby-remark-images',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        remarkPlugins: [
+          remarkSlug
+        ],
+        plugins: ['gatsby-remark-images', 'remark-slug'],
+        extensions: ['.mdx', '.md'],
+        defaultLayout: require.resolve('./src/components/templates/Post.tsx')
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: 'content',
+        name: '${__dirname}/content'
+      }
+    },
   ],
 };
