@@ -7,14 +7,13 @@ import Sidebar  from '../common/Sidebar';
 
 import Introduction from '../introduction/Introduction';
 import Skills from '../skills/Skills';
-import Contact      from '../contact/Contact';
 import About from '../about/About';
 import Experiences from '../experiences/Experiences';
 import Projects from '../projects/Projects';
 
 import { Scrollspy } from '@makotot/ghostui';
 
-const SIZE = 6;
+const SIZE = 5;
 
 const IndexPage = ({ pageContext: { projects } }) => {
   const sectionRefs = Array.from({length: SIZE}, (x, i) => useRef(null));
@@ -36,7 +35,6 @@ const IndexPage = ({ pageContext: { projects } }) => {
         <div ref={sectionRefs[2]}><Experiences /></div>
         <div ref={sectionRefs[3]}><Skills /></div>
         <div ref={sectionRefs[4]}><Projects projects={projects} /></div>
-        <div ref={sectionRefs[5]}><Contact /></div>
       </div>
 
       <Footer />

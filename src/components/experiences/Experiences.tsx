@@ -54,7 +54,7 @@ let Experiences = () => {
       description: 
       <>
         Developed software to support simulations in two DARPA projects: 
-        <a href="https://www.darpa.mil/program/urban-reconnaissance-through-supervised-autonomy">URSA</a> 
+        <a href="https://www.darpa.mil/program/urban-reconnaissance-through-supervised-autonomy"> URSA </a> 
         and <a href="https://www.subtchallenge.com/">Subterranean challenge</a>. For URSA I
         built environments and worlds with artificially intelligent characters in them to test the
         capabilities of drones running FOCUS. AirSim was utilized to mimic the drones physics within these

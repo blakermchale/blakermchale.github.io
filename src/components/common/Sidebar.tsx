@@ -9,7 +9,6 @@ const Sidebar = ({target_idx}) => {
     { content: 'Experience', href: 'experience', idx: 2, target_idx: Number(target_idx) },
     { content: 'Skills', href: 'skills', idx: 3, target_idx: Number(target_idx) },
     { content: 'Projects', href: 'projects', idx: 4, target_idx: Number(target_idx) },
-    { content: 'Contact Me', href: 'contact', idx: 5, target_idx: Number(target_idx) },
   ]
 
   return (
