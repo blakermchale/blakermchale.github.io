@@ -87,20 +87,20 @@ const CARD_HEIGHT = '300px';
 
 const MEDIA_QUERY_SMALL = '@media (max-width: 600px)';
 
+const Subheading = styled.h2`
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: table;
+  border-bottom: none;
+`;
+
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   display: table;
   border-bottom: ${({ theme }) => theme.colors.primary} 5px solid;
-`;
-
-const Subheading = styled(Text)`
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  display: table;
-  border-bottom: none;
 `;
 
 const TextContainer = styled.div`
