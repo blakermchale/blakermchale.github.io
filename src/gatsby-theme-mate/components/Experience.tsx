@@ -85,7 +85,7 @@ const Experience = ({
 
 const CARD_HEIGHT = '300px';
 
-const MEDIA_QUERY_SMALL = '@media (max-width: 500px)';
+const MEDIA_QUERY_SMALL = '@media (max-width: 600px)';
 
 const Title = styled(Text)`
   font-size: 14px;
