@@ -8,8 +8,8 @@ export type QueryResponse = {
       name: string;
       // FIXME: Can't use description until shadowing queries is figured out
       brief: {
-        childMarkdownRemark: {
-            rawMarkdownBody: string;
+        childMdx: {
+            body: string;
           };
       };
       homepage: string;
@@ -36,8 +36,8 @@ export const useProjectsQuery = (): Project[] => {
           name
           subheading
           brief {
-            childMarkdownRemark {
-                rawMarkdownBody
+            childMdx {
+                body
             }
           }
           homepage: projectUrl
@@ -54,10 +54,9 @@ export const useProjectsQuery = (): Project[] => {
       }
     }
   `);
-  console.log(contentfulAbout)
   return contentfulAbout.projects.map(({ cover, brief, ...rest }) => ({
     ...rest,
-    description: brief.childMarkdownRemark.rawMarkdownBody,
+    description: brief.childMdx.body,
     cover: {
       alt: cover.title,
       src: cover.image.src,

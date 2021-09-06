@@ -5,6 +5,7 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
 const remarkSlug = require(`remark-slug`);
 
 const plugins = [
+  'gatsby-plugin-typescript',
   {
     resolve: `gatsby-theme-mate`,
     options: {

@@ -25,6 +25,19 @@ export type Experience = {
     logo: Image;
 }
 
+export type Skill = {
+  name: string;
+  type: string;
+  url: string;
+  icon: Image;
+}
+
+export type SkillBar = {
+  name: string;
+  proficiency: number;
+  color: string;
+}
+
 export type Project = {
   name: string;
   subheading: string;
@@ -37,8 +50,9 @@ export type Project = {
 };
 
 export type AboutMe = {
-  markdown: string;
+  mdx: string;
   profile: Image;
+  resume: string;
 };
 
 export type SocialLink = {

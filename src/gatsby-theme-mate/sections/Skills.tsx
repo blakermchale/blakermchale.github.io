@@ -4,23 +4,45 @@ import Section from 'gatsby-theme-mate/src/components/Section';
 import { CardContainer } from 'gatsby-theme-mate/src/components/Card';
 import Triangle from 'gatsby-theme-mate/src/components/Triangle';
 import Skill from '../components/Skill';
-import { useExperiencesQuery } from '../queries/useExperiencesQuery';
+import { useSkillsQuery } from '../queries/useSkillsQuery';
+import { useSkillBarsQuery } from '../queries/useSkillBarsQuery';
 import { SECTION } from '../utils/constants';
+import SkillBar from '../components/SkillBar';
+import { Box, Flex } from 'rebass/styled-components';
 
 const Skills = () => {
-  const experiences = useExperiencesQuery();
+  const skills = useSkillsQuery();
+  const skillBars = useSkillBarsQuery();
 
   return (
     <Section.Container id={SECTION.skills} Background={Background}>
       <Section.Header name={SECTION.skills} icon="💻" label="notebook" />
-
-      <CardContainer minWidth="500px">
-        <Fade direction="down" cascade damping={0.5} triggerOnce>
-          {experiences.map((p, i) => (
-            <Skill {...p} key={i} />
-          ))}
-        </Fade>
-      </CardContainer>
+      <Flex flexWrap="wrap">
+        <Box 
+        width={[1, 1, 1 / 2]}
+        px={[1, 2, 2]}
+        mt={2}
+        >
+          <Fade direction="down" cascade damping={0.5} triggerOnce>
+            {skillBars.map((p, i) => (
+              <SkillBar {...p} key={i} />
+            ))}
+          </Fade>
+        </Box>
+        <Box
+        width={[1, 1, 1 / 2]}
+        px={[1, 2, 2]}
+        mt={2}
+        >
+          <CardContainer minWidth="150px">
+            <Fade direction="down" cascade damping={0.5} triggerOnce>
+              {skills.map((p, i) => (
+                <Skill {...p} key={i} />
+              ))}
+            </Fade>
+          </CardContainer>
+        </Box>
+      </Flex>
     </Section.Container>
   );
 };

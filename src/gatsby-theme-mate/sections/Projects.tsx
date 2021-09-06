@@ -16,7 +16,7 @@ const Projects = () => {
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
           {projects.map((p) => (
-            <Project {...p} key={p.url} />
+            <Project {...p} key={p.name} />
           ))}
         </Fade>
       </CardContainer>

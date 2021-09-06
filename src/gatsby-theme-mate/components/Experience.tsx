@@ -26,12 +26,12 @@ const Experience = ({
     <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
         <span>
-        <a
-            href={homepage}
-            target="__blank"
-            title={name}
-            style={{ textDecoration: 'none' }}
-          >
+          <a
+              href={homepage}
+              target="__blank"
+              title={name}
+              style={{ textDecoration: 'none' }}
+            >
           <Title my={2} pb={1} color="text">
             {name} <SocialLink name="Homepage" icon="link" url={homepage} />
           </Title>
@@ -83,9 +83,9 @@ const Experience = ({
   </Card>
 );
 
-const CARD_HEIGHT = '200px';
+const CARD_HEIGHT = '300px';
 
-const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
+const MEDIA_QUERY_SMALL = '@media (max-width: 500px)';
 
 const Title = styled(Text)`
   font-size: 14px;

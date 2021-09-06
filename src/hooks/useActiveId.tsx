@@ -26,7 +26,11 @@ export const useActiveId = (
 
     return () => {
       itemIds.forEach((id) => {
-        observer.unobserve(document.getElementById(id) as Element);
+        const element = document.getElementById(id) as Element;
+        if (typeof Element === element) 
+        {
+          observer.unobserve(element);
+        }
       });
     };
   }, [itemIds, rootMargin]);

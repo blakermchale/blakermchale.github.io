@@ -31,9 +31,9 @@ const setup = async () => {
     QUESTIONS,
   );
 
-  console.log('Writing config file...');
-  const envData = [`SPACE_ID=${spaceId}`, `ACCESS_TOKEN=${deliveryToken}`];
-  writeFileSync(CONFIG_FILE_PATH, envData.join(os.EOL));
+  // console.log('Writing config file...');
+  // const envData = [`SPACE_ID=${spaceId}`, `ACCESS_TOKEN=${deliveryToken}`];
+  // writeFileSync(CONFIG_FILE_PATH, envData.join(os.EOL));
 
   console.log('Importing content into your Contentful ...');
   await spaceImport({ spaceId, managementToken, content: exportFile });

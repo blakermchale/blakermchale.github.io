@@ -1,23 +1,16 @@
 import React from 'react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from "gatsby"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { MDXProvider } from '@theme-ui/mdx';
+import { Box, Flex } from 'rebass/styled-components';
+import styled from 'styled-components';
+import { Fade } from 'react-awesome-reveal';
 import Layout from 'gatsby-theme-mate/src/components/Layout';
 import Footer from 'gatsby-theme-mate/src/components/Footer';
 import Header from 'gatsby-theme-mate/src/components/Header';
-// import TableOfContents from '../../components/common/TableOfContents'
-import { MDXProvider } from '@theme-ui/mdx';
-import TableOfContents from '../components/TableOfContents';
-
-
-
-import { Box, Image, Flex } from 'rebass/styled-components';
-import styled from 'styled-components';
-import ReactMarkdown from 'react-markdown';
-import { Fade } from 'react-awesome-reveal';
-// import Section from 'gatsby-theme-mate/src/components/Section';
 import Triangle from 'gatsby-theme-mate/src/components/Triangle';
 import { SECTION } from 'gatsby-theme-mate/src/utils/constants';
-
+import TableOfContents from '../components/TableOfContents';
 
 class Post extends React.Component {
     props;
@@ -42,20 +35,9 @@ class Post extends React.Component {
         if (useToc) {
             inner = <>
                 <Box
-                width={[1, 1, 4 / 6]}
-                px={[1, 2, 4]}
-                mt={2}
-                order={[2, 1]}
-                >
-                    <Fade direction="down" triggerOnce>
-                        {mdx_body}
-                    </Fade>
-                </Box>
-
-                <Box
                 width={[1, 1, 2 / 6]}
                 style={{ maxWidth: '300px' }}
-                order={[1, 2]}
+                // order={[1, 2]}
                 >
                     <Fade direction="right" triggerOnce>
                         {
@@ -65,6 +47,18 @@ class Post extends React.Component {
                         }
                     </Fade>
                 </Box>
+                <Box
+                width={[1, 1, 4 / 6]}
+                px={[1, 2, 4]}
+                mt={2}
+                // order={[2, 1]}  // Reorders if TOC is on the right
+                >
+                  <Fade direction="down" triggerOnce>
+                      {mdx_body}
+                  </Fade>
+                </Box>
+
+                
             </>;
         } else {
             inner = <Box width={[1, 1]} px={[1, 2, 4]} mt={2}>
@@ -138,7 +132,7 @@ const Background = () => (
   import { ReactNode } from 'react';
   import { Heading } from 'rebass/styled-components';
   import { Slide } from 'react-awesome-reveal';
-  import Link from 'gatsby-theme-mate/src/components/Link';
+  import Link from '../gatsby-theme-mate/components/Link';
   import { getSectionHref } from 'gatsby-theme-mate/src/utils/helpers';
   
   type ContainerProps = {
@@ -181,19 +175,12 @@ const Background = () => (
   
   const SectionContainer = styled.div`
     min-height: 100vh;
-    min-width: 320px;
-    max-width: 1366px;
     display: flex;
-    // margin: auto;
     flex: 0 1 auto;
     flex-direction: column;
     justify-content: center;
     padding: 5em 1em;
     scroll-behavior: smooth;
-  
-    @media (max-width: 400px) {
-      padding: 2em 1em;
-    }
   `;
 
   const DefaultBackground = () => <div />;
