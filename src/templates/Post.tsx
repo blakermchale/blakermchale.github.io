@@ -11,6 +11,7 @@ import Header from 'gatsby-theme-mate/src/components/Header';
 import Triangle from 'gatsby-theme-mate/src/components/Triangle';
 import { SECTION } from 'gatsby-theme-mate/src/utils/constants';
 import TableOfContents from '../components/TableOfContents';
+import MediaDisplay from '../components/MediaDisplay';
 
 class Post extends React.Component {
     props;
@@ -26,7 +27,11 @@ class Post extends React.Component {
         const mdx_body = 
             <>
             <SHeader name={name} />
-            <MDXProvider>
+            <MDXProvider
+              components={{
+                img: MediaDisplay
+              }}
+            >
                 <MDXRenderer headings={headings}>
                     {body}
                 </MDXRenderer>
