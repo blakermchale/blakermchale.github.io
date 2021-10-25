@@ -1,21 +1,52 @@
 import React from 'react';
 import ReactPlayer from 'react-player/lazy';
+import styled, { css } from 'styled-components';
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/182
 const MediaDisplay = ({src, alt}) => {
-    const width = "600px";
+    let inner = (
+        <></>
+    )
     if (src.endsWith(".mp4")) {
-        return (
-            <ReactPlayer url={src} controls width={width}/>
+        inner = (
+            <StyledReactPlayer url={src} controls/>
         );
     }
-    return (
-        // <StaticImage
-        // src="/data/gifs/swarm_team_ex.gif"
-        // alt="hello"
-        // />
-        <img src={src} alt={alt} width={width}/>
-    );
+    else {
+        inner = (
+            // <StaticImage
+            // src="/data/gifs/swarm_team_ex.gif"
+            // alt="hello"
+            // />
+            <StyledImg src={src} alt={alt}/>
+        );
+    }
+    return inner;
 };
+
+
+const Media = css`
+    width: 600px;
+    display: block;
+    margin: auto;
+
+    @media (max-width: 450px) {
+        width: 350px !important;
+        height: auto !important;
+    }
+
+    @media (max-width: 400px) {
+        width: 300px !important;
+        height: auto !important;
+    }
+`
+
+const StyledReactPlayer = styled(ReactPlayer)`
+    ${Media}
+`
+
+const StyledImg = styled.img`
+    ${Media}
+`
 
 export default MediaDisplay;

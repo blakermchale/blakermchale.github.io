@@ -14,6 +14,7 @@ import TableOfContents from '../components/TableOfContents';
 import MediaDisplay from '../components/MediaDisplay';
 import PDFViewer from '../components/PDFViewer';
 
+
 class Post extends React.Component {
     props;
     render () {
@@ -78,7 +79,7 @@ class Post extends React.Component {
             <Layout>
                 <Header />
                 <SContainer Background={Background}>
-                    <Flex justifyContent="center" flexWrap="wrap">
+                    <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
                         {inner}
                     </Flex>
                 </SContainer>
@@ -107,87 +108,104 @@ export const query = graphql`
 `
 
 const Background = () => (
-    <>
-      <Triangle
-        color="muted"
-        height={['35vh', '80vh']}
-        width={['95vw', '60vw']}
-      />
-  
-      <Triangle
-        color="secondary"
-        height={['38vh', '80vh']}
-        width={['50vw', '35vw']}
-      />
-  
-      <Triangle
-        color="primary"
-        height={['25vh', '35vh']}
-        width={['75vw', '60vw']}
-        position="top-right"
-      />
-  
-      <Triangle
-        color="muted"
-        height={['20vh', '20vh']}
-        width={['100vw', '100vw']}
-        position="bottom-right"
-      />
-    </>
-  );
+  <>
+    <Triangle
+      color="muted"
+      height={['35vh', '80vh']}
+      width={['95vw', '60vw']}
+    />
 
-  import { ReactNode } from 'react';
-  import { Heading } from 'rebass/styled-components';
-  import { Slide } from 'react-awesome-reveal';
-  import Link from '../gatsby-theme-mate/components/Link';
-  import { getSectionHref } from 'gatsby-theme-mate/src/utils/helpers';
-  
-  type ContainerProps = {
-    id?: SECTION;
-    children: ReactNode;
-    Background?: () => JSX.Element;
-  };
-  
-  const SContainer = ({
-    id,
-    children,
-    Background = DefaultBackground,
-  }: ContainerProps) => (
-    <section style={{ position: 'relative' }}>
-      <Background />
-      <SectionContainer>{children}</SectionContainer>
-    </section>
-  );
-  
-  type HeaderProps = {
-    name: string;
-    icon?: string;
-    label?: string;
-  };
-  
-  const SHeader = ({ name, icon, label }: HeaderProps) => (
-    <Slide direction="left" triggerOnce>
-      <Heading color="text" mb={4}>
-        <Link selected>
-          {name}
-          {icon && (
-            <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-              {icon}
-            </span>
-          )}
-        </Link>
-      </Heading>
-    </Slide>
-  );
-  
-  const SectionContainer = styled.div`
-    min-height: 100vh;
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5em 1em;
-    scroll-behavior: smooth;
-  `;
+    <Triangle
+      color="secondary"
+      height={['38vh', '80vh']}
+      width={['50vw', '35vw']}
+    />
 
-  const DefaultBackground = () => <div />;
+    <Triangle
+      color="primary"
+      height={['25vh', '35vh']}
+      width={['75vw', '60vw']}
+      position="top-right"
+    />
+
+    <Triangle
+      color="muted"
+      height={['20vh', '20vh']}
+      width={['100vw', '100vw']}
+      position="bottom-right"
+    />
+  </>
+);
+
+import { ReactNode } from 'react';
+import { Heading } from 'rebass/styled-components';
+import { Slide } from 'react-awesome-reveal';
+import Link from '../gatsby-theme-mate/components/Link';
+import { getSectionHref } from 'gatsby-theme-mate/src/utils/helpers';
+
+type ContainerProps = {
+  id?: SECTION;
+  children: ReactNode;
+  Background?: () => JSX.Element;
+};
+
+const SContainer = ({
+  id,
+  children,
+  Background = DefaultBackground,
+}: ContainerProps) => (
+  <section style={{ position: 'relative' }}>
+    <Background />
+    <SectionContainer>{children}</SectionContainer>
+  </section>
+);
+
+type HeaderProps = {
+  name: string;
+  icon?: string;
+  label?: string;
+};
+
+const SHeader = ({ name, icon, label }: HeaderProps) => (
+  <Slide direction="left" triggerOnce>
+    <Heading color="text" mb={4}>
+      <Link selected>
+        {name}
+        {icon && (
+          <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+            {icon}
+          </span>
+        )}
+      </Link>
+    </Heading>
+  </Slide>
+);
+
+// const SectionContainer = styled.div`
+//   min-height: 100vh;
+//   display: flex;
+//   flex: 0 1 auto;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 5em 1em;
+//   scroll-behavior: smooth;
+// `;
+
+const SectionContainer = styled.div`
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 1366px;
+  display: flex;
+  margin: auto;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 1em;
+  scroll-behavior: smooth;
+
+  @media (max-width: 400px) {
+    padding: 4em 1em;
+  }
+`;
+
+const DefaultBackground = () => <div />;

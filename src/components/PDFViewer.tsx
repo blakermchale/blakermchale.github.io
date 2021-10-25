@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
+
+// import React, { Component } from 'react';
 // import { pdfjs, Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 // import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
@@ -78,9 +81,20 @@ import React, { Component } from 'react';
 const PDFViewer = ({ file }) => {
 
   return (
-    <iframe src={file} width="100%" height="800px">
-    </iframe>
+    <StyledIFrame src={file} width="100%" height="800px"/>
   );
 }
+
+const StyledIFrame = styled.iframe`
+  height: 800px;
+
+  @media (max-width: 450px) {
+    height: 450px;
+  }
+
+  @media (max-width: 400px) {
+    height: 450px;
+  }
+`
 
 export default PDFViewer;
