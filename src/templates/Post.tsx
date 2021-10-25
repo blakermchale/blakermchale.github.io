@@ -12,6 +12,7 @@ import Triangle from 'gatsby-theme-mate/src/components/Triangle';
 import { SECTION } from 'gatsby-theme-mate/src/utils/constants';
 import TableOfContents from '../components/TableOfContents';
 import MediaDisplay from '../components/MediaDisplay';
+import PDFViewer from '../components/PDFViewer';
 
 class Post extends React.Component {
     props;
@@ -29,7 +30,8 @@ class Post extends React.Component {
             <SHeader name={name} />
             <MDXProvider
               components={{
-                img: MediaDisplay
+                img: MediaDisplay,
+                PDFViewer
               }}
             >
                 <MDXRenderer headings={headings}>

@@ -6,7 +6,7 @@ const MediaDisplay = ({src, alt}) => {
     const width = "600px";
     if (src.endsWith(".mp4")) {
         return (
-            <ReactPlayer url={src} controls="true" width={width}/>
+            <ReactPlayer url={src} controls width={width}/>
         );
     }
     return (
