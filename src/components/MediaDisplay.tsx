@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/182
 const MediaDisplay = ({src, alt}) => {
