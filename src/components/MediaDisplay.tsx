@@ -7,7 +7,7 @@ const MediaDisplay = ({src, alt}) => {
     let inner = (
         <></>
     )
-    if (src.endsWith(".mp4")) {
+    if (src.endsWith(".mp4") || src.includes("www.youtube.com")) {
         inner = (
             <StyledReactPlayer url={src} controls/>
         );
